@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #1e1e1e;
+  color: white;
+  padding-bottom: 100px;
+}
+
+.player-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.playlist {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.playlist li {
+  background: #2e2e2e;
+  padding: 15px;
+  margin: 10px auto;
+  border-radius: 8px;
+  width: 60%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.playlist li:hover {
+  background: #444444;
+}
+
+.footer-player {
+  position: fixed;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000000e0;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  gap: 25px;
+  box-shadow: 0 0 15px #00000080;
+}
+.backtohome {
+  position: fixed;
+  top: 10px;
+  left: 10%;
+  transform: translateX(-50%);
+  
+  font-size: 18px;
+  padding: 6px 16px;
+  
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3); 
+  z-index: 1000; 
+}
+
+#next-button {
+  font-size: 24px;
+  padding: 6px 12px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+#next-button:hover {
+  background: #555;
+}
+.footer-player button {
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background 0.2s ease;
+}
+
+.footer-player button:hover {
+  background-color: #555;
+}
+#main-audio {
+  width: 500px; 
+  max-width: 100%; 
+}
+
+.custom-player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  font-size: 14px;
+}
+.footer-player > button,
+.custom-player > button {
+  padding: 4px 8px;
+  font-size: 14px;
+  border-radius: 4px;
+}
+#play-pause {
+  background: #444;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  position: calc(display);
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.progress-container {
+  width: 300px;
+  height: 6px;
+  background: #777;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background: #00ffcc;
+  border-radius: 4px;
+}
+#timestamp {
+  color: #ccc;
+  font-size: 14px;
+  margin: 0 10px;
+  min-width: 100px;
+  text-align: center;
+}
+
+#volume-slider {
+  width: 70px;
+  cursor: pointer;
+}
+
+#speed-select {
+  padding: 4px;
+  background-color: #222;
+  color: white;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
