@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Playlist 2</title>
+  <link rel="stylesheet" href="playliststyles.css">
+</head>
+<body>
+<button class="backtohome" onclick="location.href='homepage1.html'">
+  Go Back to Home
+</button>
+
+  <div class="player-container">
+    <h1>Playlist 2</h1>
+    <ul class="playlist" id="playlist">
+      <li onclick="playSong(0)">
+        <span>a song - someone</span>
+      </li>
+      <li onclick="playSong(1)">
+        <span>a song - someone</span>
+      </li>
+      <li onclick="playSong(2)">
+        <span>a song - someone</span>
+      </li>
+      <li onclick="playSong(3)">
+        <span>a song - someone...</span>
+      </li>
+
+    </ul>
+  </div>
+
+<div class="footer-player" id="footer-player">
+  <button onclick="playPreviousSong()">⏮</button>
+  <button onclick="skipBackward()">< 15s</button>
+
+  <span id="now-playing">Now Playing: None</span>
+
+  <button onclick="skipForward()">> 15s</button>
+  <button onclick="playNextSong()">⏭</button>
+
+  <div class="custom-player">
+    <button id="play-pause">▶</button>
+
+    <div class="progress-container" onclick="seek(event)">
+      <div class="progress-bar" id="progress-bar"></div>
+    </div>
+
+    <span id="timestamp">0:00 / 0:00</span>
+
+    <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" title="Volume">
+    
+    <select id="speed-select" title="Playback Speed">
+      <option value="0.5">0.5x</option>
+      <option value="0.75">0.75x</option>
+      <option value="1" selected>1x</option>
+      <option value="1.25">1.25x</option>
+      <option value="1.5">1.5x</option>
+      <option value="2">2x</option>
+    </select>
+  </div>
+
+  <audio id="main-audio"></audio>
+</div>
+
+
+
+
+  <script src="playsync.js"></script>
+</body>
+</html>
